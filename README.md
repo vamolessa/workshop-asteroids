@@ -8,7 +8,7 @@ DESAFIOS:
 - instanciar asteroides menores quando um maior é destruído
 
 DESAFIOS DESAFIADORES:
-- adicionar sons (usando o [AudioSource](https://docs.unity3d.com/ScriptReference/AudioSource.html))
+- adicionar sons (usando o [AudioSource](https://docs.unity3d.com/ScriptReference/AudioSource.html) pra tocar audio e [sfxr](https://sfxr.me/) pra criar os audios)
   - atirar projetil
   - explodir asteroide
   - explodir jogador
