@@ -7,26 +7,26 @@ public class ComportamentoJogador : MonoBehaviour
     public float velocidadeAngular = 180.0f;
     public float velocidadeMaxima = 10.0f;
 
-	public Rigidbody2D prefabProjetil;
-	public float velocidadeProjetil = 10.0f;
+    public Rigidbody2D prefabProjetil;
+    public float velocidadeProjetil = 10.0f;
 
     void Start()
     {
     }
 
-	void Update()
-	{
-		if (Input.GetKeyDown(KeyCode.Space))
-		{
-			Rigidbody2D projetil = Instantiate(
-				prefabProjetil,
-				meuRigidbody.position,
-				Quaternion.identity
-			);
-			
-			projetil.velocity = transform.up * velocidadeProjetil;
-		}
-	}
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Rigidbody2D projetil = Instantiate(
+                prefabProjetil,
+                meuRigidbody.position,
+                Quaternion.identity
+            );
+
+            projetil.velocity = transform.up * velocidadeProjetil;
+        }
+    }
 
     void FixedUpdate()
     {
