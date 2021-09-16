@@ -9,6 +9,7 @@ public class ComportamentoJogador : MonoBehaviour
 
     public Rigidbody2D prefabProjetil;
     public float velocidadeProjetil = 10.0f;
+    public float duracaoProjetilEmSegundos = 1.0f;
 
     void Start()
     {
@@ -25,6 +26,7 @@ public class ComportamentoJogador : MonoBehaviour
             );
 
             projetil.velocity = transform.up * velocidadeProjetil;
+            Destroy(projetil.gameObject, duracaoProjetilEmSegundos);
         }
     }
 
